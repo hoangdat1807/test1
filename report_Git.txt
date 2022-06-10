@@ -27,6 +27,7 @@ Chuyển nhánh
 Trước khi muốn thay đổi source code, điều đầu tiên mà bạn cần phải làm là checkout một nhánh. Để checkout một nhánh, bạn dùng câu lệnh Git sau:
 
 $ git checkout <name_branch>
+$git checkout -b <name_new branch> : thêm branch mới trên github 
 Cập nhật thay đổi
 Sau khi bạn thay đổi source code: thêm mới, sửa, xoá files,… Bạn cần phải cập nhật lên Staging Area. Để cập nhật hết các files:
 
@@ -36,12 +37,22 @@ Sau lệnh add, bạn cần sử dụng câu lệnh Commit để đây thông ti
 $ git commit -m "Message"
 Cập nhật lên server
 Sau câu lệnh Commit, thông tin mới chỉ được cập nhật lên Local Repository. Nếu muốn cập nhật lên server thì bạn phải sử dụng câu lệnh push:
-
 $ git push origin <name_branch>
-Ngoài ra, nếu chưa tồn tại remote trên server thì cần phải add mới một remote trước rồi mới push:
+* Ngoài ra, nếu chưa tồn tại remote trên server thì cần phải add mới một remote trước rồi mới push:
 
 $ git remote add origin <remote_url>
 $ git push origin <name_branch>
+
+* Em đã thực hành thêm nhánh new_branch trên github
+$ git checkout -b <name_new branch> 
+$git status : để kiểm tra nhánh đang ở hiện tại
+$ git add .
+$ git commit -m "noi dung sửa" 
+$ git push origin <name_new branch>
+* thay đổi nội dung từ local 
+$ git add .
+$ git commit -m" thay đổi từ local"
+$ git push origin <tên new_branch>
 
 
  
