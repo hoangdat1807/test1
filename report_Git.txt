@@ -1,0 +1,47 @@
+các bước tạo repo và đồng bộ nội dùng Local Repo vs Remote repo
+B1: tạo Remote repo trên Github
+B2: dùng lệnh $git clone <url Repo> để copy Remote repo về local repo
+B3: thêm/sửa/xóa nôi dung trên Local Repo 
+B4: git add . (nếu không được thì $cls  =>> $cd <tên thư mục chứa local repo>
+B5: git commit -m "nội dung thay đổi"
+B6: git push 
+
+Cách 2: đẩy nội dung lên git-hub
+B1: tạo remote Repository trên Github
+B2:tại thư mục chứ local Repo  =>>chuột phải =>> chọn gitbash
+B3: B3: $ git init 
+B4: B4: git remote add <tên remte repo > <link repo>
+B5: git add .
+B6: git commit -m "nội dung commit"
+B7: git push " tên remote repo"
+
+Các lệnh trên Git
+$ git config --global user.name "User Name"  
+$ git config --global user.email "username@gmail.com" : Thiết lập chứng thưc cá nhận 
+$ git init : Tạo kho chứa git ( vì muốn theo dõi một dự án trong git thì cần file.git trong thư mục )
+$ git clone https://github.com/user/repository.git: Câu lệnh tạo một thư mục mới có tên giống trên của Repo.
+$ git branch : kiểm tra branch hiện tại 
+$ git branch <name_branch>:  Để tạo mới một branch:
+$ git branch -b <name_branch>: Để chuyển và tạo mới branch 
+Chuyển nhánh
+Trước khi muốn thay đổi source code, điều đầu tiên mà bạn cần phải làm là checkout một nhánh. Để checkout một nhánh, bạn dùng câu lệnh Git sau:
+
+$ git checkout <name_branch>
+Cập nhật thay đổi
+Sau khi bạn thay đổi source code: thêm mới, sửa, xoá files,… Bạn cần phải cập nhật lên Staging Area. Để cập nhật hết các files:
+
+$ git add .
+Sau lệnh add, bạn cần sử dụng câu lệnh Commit để đây thông tin thay đổi lên Local Respository:
+
+$ git commit -m "Message"
+Cập nhật lên server
+Sau câu lệnh Commit, thông tin mới chỉ được cập nhật lên Local Repository. Nếu muốn cập nhật lên server thì bạn phải sử dụng câu lệnh push:
+
+$ git push origin <name_branch>
+Ngoài ra, nếu chưa tồn tại remote trên server thì cần phải add mới một remote trước rồi mới push:
+
+$ git remote add origin <remote_url>
+$ git push origin <name_branch>
+
+
+ 
