@@ -1,3 +1,6 @@
+
+//// hello president
+
 #include<stdio.h>
 long long dao(long long n)
 {
